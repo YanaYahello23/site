@@ -1,0 +1,22 @@
+.nav {
+    color: var(--foreground);
+    background: var(--background);
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed white;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.link.active {
+    color: var(--secondary);
+}

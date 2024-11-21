@@ -26,7 +26,7 @@ const Nav = () => {
                         href={link.href}
                         className={`${styles.link} ${pathname === link.href ? styles.active : ""}`}
                     >
-                        <LinkIcon className="w-6" />
+                        <LinkIcon className="w-6"/>
                         <p>{link.name}</p>
                     </Link>
                 );

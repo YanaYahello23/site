@@ -3,7 +3,7 @@ import styles from "../styles/news.module.css";
 
 const newsCards = [
     {rssUrl: "https://css-tricks.com/rss-for-newsletters", imageSrc: "/css.jpg" },
-    {rssUrl: "https://t3n.de/rss.xml", imageSrc: "/ts.jpg" },
+    {rssUrl: "https://www.wired.com/feed/rss", imageSrc: "/mixed.jpg" },
     {rssUrl: "https://frontendfront.com/feed/stories", imageSrc: "/fe.jpg" }
 ]
 

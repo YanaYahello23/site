@@ -58,17 +58,8 @@ export default function NewsFeed({rssUrl, imageSrc}: NewsProps) {
     }
 
     return (
-        <section className={styles.card}>
+        <section className={styles.cards}>
             <div>
-                <ul>
-                    {items.map((item, index) => (
-                        <div key={index}>
-                            <a href={item.link} target={"_blank"}>
-                                <h3>{item.title}</h3>
-                            </a>
-                        </div>
-                    ))}
-                </ul>
                 <Image
                     src={imageSrc}
                     alt="main bg image"
@@ -76,6 +67,16 @@ export default function NewsFeed({rssUrl, imageSrc}: NewsProps) {
                     width={400}
                     style={{ borderRadius: "4px" }}
                 />
+                <ul className={styles.card}>
+                    {items.map((item, index) => (
+                        <li key={index} className={styles.cardLink}>
+                            <a href={item.link} target={"_blank"}>
+                                <h3>{item.title}</h3>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+
             </div>
         </section>
     );

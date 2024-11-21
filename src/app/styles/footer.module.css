@@ -1,0 +1,26 @@
+.mainContainer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.li a:hover {
+    color: var(--secondary);
+}
